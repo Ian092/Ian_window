@@ -11,18 +11,18 @@ If you're thinking to yourself, This is**_ unbelievable_**, you'd probably be ri
 
 ## 第2部分
 
-# Header one #
-## Header two ##
-### Header three ###
-#### Header four ####
-##### Header five #####
-###### Header six ######
+# Header one 
+## Header two 
+### Header three 
+#### Header four 
+##### Header five 
+###### Header six 
 
-#### Colombian Symbolism in One Hundred Years of Solitude ####
+#### Colombian Symbolism in One Hundred Years of Solitude 
+
+Here's some words about the book _One Hundred Years..._.
 
 ## 第3部分
-
-Here's some words about the book _ One Hundred Years... _.
 
 [Search for it.]( www.google.com)
 
@@ -38,5 +38,11 @@ Well, do I have [the website for you][another fun place]!
 [another fun place]:www.stumbleupon.com
 
 ## 第4部分
+![A pretty tiger](https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg)
 
+![Black cat][Black]
 
+![Orange cat][Orange]
+
+[Black]: https://upload.wikimedia.org/wikipedia/commons/a/a3/81_INF_DIV_SSI.jpg
+[Orange]: http://icons.iconarchive.com/icons/google/noto-emoji-animals-nature/256/22221-cat-icon.png
