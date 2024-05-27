@@ -1,6 +1,10 @@
 # 第二次作業
+## 作業程式碼
+'https://github.com/Ian092/Ian_window/blob/main/homework/Issues6/Issues%206.ipynb'
+
+
 ## 請將以下網址的json,儲存為aqi.json檔
-url= 'https://github.com/Ian092/Ian_window/blob/main/homework/Issues6/Issues%206.JOSN'
+'https://github.com/Ian092/Ian_window/blob/main/homework/Issues6/Issues%206.JOSN'
 
 ## 將位址使用requests.get 賦值response
 response:Response = requests.get(url)
