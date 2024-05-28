@@ -6,7 +6,6 @@ def get_names()->list[str]:
     names:list[str]=content.split()
     return names
 
-names:list[str]=get_names()
 
 class Window(tk.Tk):
      def __init__ (self,title:str="Hello! Tkinter!",**kwargs):
