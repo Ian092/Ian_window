@@ -7,11 +7,11 @@ class Window(tk.Tk):
           self.title("pack1")
           self.geometry("300x200")
 
-          ttk.Button(self,text="Top").pack(fill="x")
+          ttk.Button(self,text="Top").pack(fill="y")
           
-          ttk.Button(self,text="Middle").pack(fill="x")
+          ttk.Button(self,text="Middle").pack(fill="y")
 
-          ttk.Button(self,text="Bottom").pack(fill="x")
+          ttk.Button(self,text="Bottom").pack(fill="y")
 
 
 if __name__=="__main__":
