@@ -1,5 +1,5 @@
-import requests
-from requests import Response
+import requests # type: ignore
+from requests import Response # type: ignore
 from pydantic import BaseModel, RootModel, Field
 
 def __download_json():
