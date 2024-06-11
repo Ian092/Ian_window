@@ -1,7 +1,7 @@
 import data
 import tkinter as tk
 from tkinter import ttk
-from ttkthemes import ThemedTk
+from ttkthemes import ThemedTk # type: ignore
 
 class Window(ThemedTk):
       def __init__(self,theme:str|None,**kwargs):
