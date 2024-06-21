@@ -5,3 +5,5 @@ tkintermapview
 matplotlib
 numpy
 pandas
+seaborn
+ttkbootstrap

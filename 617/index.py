@@ -1,4 +1,4 @@
-from ttkthemes import ThemedTk
+from ttkthemes import ThemedTk # type: ignore
 import tkinter as tk
 from tkinter import ttk, messagebox,Misc
 import data
@@ -79,9 +79,9 @@ class Window(ThemedTk):
         self.pieChartFrame.infos = records
                     
 
-import matplotlib.pyplot as plt
-import numpy as np
-from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+import matplotlib.pyplot as plt # type: ignore
+import numpy as np # type: ignore
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg # type: ignore
 class PieChartFrame(ttk.Frame):
     def __init__(self,master:Misc,**kwargs):
         super().__init__(master=master,**kwargs)
