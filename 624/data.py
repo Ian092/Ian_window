@@ -2,6 +2,8 @@ import requests # type: ignore
 from requests import Response # type: ignore
 from pydantic import BaseModel, RootModel, Field,field_validator,ConfigDict
 
+
+
 def __download_json():
     url = "https://tcgbusfs.blob.core.windows.net/dotapp/youbike/v2/youbike_immediate.json"
 
