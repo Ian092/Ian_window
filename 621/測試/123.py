@@ -1,7 +1,7 @@
 import csv
 
 # 讀取csv檔內容，放到csvDataToRead變數中。
-csvFileToRead = open (r"C:\Users\user\Documents\GitHub\Ian_window\621\測試\01.csv", 'r', encoding='utf-8-sig')
+csvFileToRead = open (r"C:\Users\bhbin\OneDrive\桌面\GitHub\Ian_window\621\測試\01.csv", 'r', encoding='utf-8-sig')
 csvDataToRead = csv.reader(csvFileToRead)
 
 # 將csvDataToRead(原csv檔內容)轉為list。

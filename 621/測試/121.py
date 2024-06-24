@@ -9,6 +9,7 @@ class Window(tk.Tk):
         self.title("台北市長照機構")
         self.style = ttk.Style(self)
         self.datas = read_csv("01.csv")
+        self.geometry('960x600')
         self.treeView = ttk.Treeview(self, columns=('#1','#2','#3', '#4', '#5', '#6', '#7','#8','#9','#10','#11','#12'),show='headings')
         self.treeView.heading('#1',text='序號')
         self.treeView.heading('#2', text='行政區')
@@ -30,10 +31,26 @@ class Window(tk.Tk):
         for _ in range(10):
             for data in self.datas[1:]:
                 self.treeView.insert('',tk.END,values=data)
+                
 
         scrollbar = ttk.Scrollbar(self, orient=tk.VERTICAL, command=self.treeView.yview)
         self.treeView.configure(yscroll=scrollbar.set)
         scrollbar.grid(row=0,column=1,sticky='ns')
+
+
+        self.treeView.column('#1', width=50)
+        self.treeView.column('#2', width=80)
+        self.treeView.column('#3', width=80)
+        self.treeView.column('#4', width=150)
+        self.treeView.column('#5', width=200)
+        self.treeView.column('#6', width=80)
+        self.treeView.column('#7', width=80)
+        self.treeView.column('#8', width=80)
+        self.treeView.column('#9', width=80)
+        self.treeView.column('#10', width=80)
+        self.treeView.column('#11', width=80)
+        self.treeView.column('#12', width=80)
+
 
 
     def item_selected(self,event):
