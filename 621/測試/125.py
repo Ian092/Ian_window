@@ -9,6 +9,7 @@ class Window(tk.Tk):
         super().__init__()
 
         self.datas = self.read_csv("01.csv")
+        self.title("長照機構資訊")
 
 
         self.areas = ['中正區', '大同區', '中山區', '萬華區',

@@ -7,3 +7,7 @@ numpy
 pandas
 seaborn
 ttkbootstrap
+folium
+PIL
+Image
+ImageTk
