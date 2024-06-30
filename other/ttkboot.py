@@ -1,5 +1,5 @@
 import tkinter as tk
-from ttkbootstrap import Style
+from ttkbootstrap import Style # type: ignore
 
 
 style=Style(theme="solar")
