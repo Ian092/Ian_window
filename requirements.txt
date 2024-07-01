@@ -12,3 +12,4 @@ PIL
 Image
 ImageTk
 ttkbootstrap
+psycopg2-binary
