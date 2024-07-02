@@ -13,3 +13,4 @@ Image
 ImageTk
 ttkbootstrap
 psycopg2-binary
+python-dotenv
