@@ -1,7 +1,7 @@
-import psycopg2
+import psycopg2 # type: ignore
 import data
 import os
-from dotenv import load_dotenv
+from dotenv import load_dotenv # type: ignore
 load_dotenv()
 
 def main():    
