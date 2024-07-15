@@ -1,5 +1,5 @@
-from dotenv import load_dotenv # type: ignore
-import psycopg2 # type: ignore
+from dotenv import load_dotenv
+import psycopg2
 import os
 load_dotenv()
 
