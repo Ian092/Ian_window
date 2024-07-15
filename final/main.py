@@ -1,4 +1,4 @@
-from flask import Flask,render_template,request # type: ignore
+from flask import Flask,render_template,request
 import data
 
 app = Flask(__name__)
