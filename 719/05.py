@@ -30,11 +30,11 @@ def show_data():
 # 按鈕函數
 def show_statistics():
     d = pd.DataFrame(data, columns=['地區','地區人口數','地區65up人口','65up長照需求人數','老化指數','扶老比','就業人口','薪資中位數','醫療院所數','照服人力','長照機構數'])
-    stats = d.describe().round(2)
+    stats = d.describe().round(6)
 
     stats_window = tk.Toplevel(root)
     stats_window.title("敘述統計表")
-    stats_window.geometry("1500x400")
+    stats_window.geometry("1500x200")
 
     # 建立新的 Treeview 來顯示統計表
     stats_tree = ttk.Treeview(stats_window, columns=list(stats.columns), show='headings')
@@ -64,7 +64,7 @@ def show_box_plot():
 
 def show_distribution():
     plt.figure("分佈圖")
-    sns.histplot(data['長照機構數'], kde=True)
+    sns.distplot(data['長照機構數'], kde=True)
     plt.show()
 
 def show_heatmap():
@@ -94,19 +94,19 @@ buttons_frame = tk.Frame(root)
 buttons_frame.pack(padx=10, pady=10)
 
 btn_statistics = tk.Button(buttons_frame, text="敘述統計表", command=show_statistics, font=("微軟正黑體", 12), width=12)
-btn_statistics.grid(row=0, column=0, padx=10, pady=10)
+btn_statistics.grid(row=0, column=0, padx=15, pady=10)
 
 btn_scatter_matrix = tk.Button(buttons_frame, text="散佈矩陣圖", command=show_scatter_matrix, font=("微軟正黑體", 12), width=12)
-btn_scatter_matrix.grid(row=0, column=1, padx=10, pady=10)
+btn_scatter_matrix.grid(row=0, column=1, padx=15, pady=10)
 
 btn_box_plot = tk.Button(buttons_frame, text="盒鬚圖", command=show_box_plot, font=("微軟正黑體", 12), width=12)
-btn_box_plot.grid(row=0, column=2, padx=10, pady=10)
+btn_box_plot.grid(row=0, column=2, padx=15, pady=10)
 
 btn_distribution = tk.Button(buttons_frame, text="分佈圖", command=show_distribution, font=("微軟正黑體", 12), width=12)
-btn_distribution.grid(row=0, column=3, padx=10, pady=10)
+btn_distribution.grid(row=0, column=3, padx=15, pady=10)
 
 btn_heatmap = tk.Button(buttons_frame, text="熱力圖", command=show_heatmap, font=("微軟正黑體", 12), width=12)
-btn_heatmap.grid(row=0, column=4, padx=10, pady=10)
+btn_heatmap.grid(row=0, column=4, padx=15, pady=10)
 
 # 顯示CSV資料
 show_data()
