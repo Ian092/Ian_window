@@ -10,7 +10,7 @@ app = Flask(__name__)
 application = DispatcherMiddleware(app,{
     "/dashboard/app1":app1.server,
     "/dashboard/app2":app2.server
-})
+}) # type: ignore
 
 @app.route("/")
 def index():
