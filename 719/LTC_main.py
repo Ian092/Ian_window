@@ -17,7 +17,7 @@ data = pd.read_csv(data_path).head(20)
 root = tk.Tk()
 root.title("長照機構數據分析")
 root.geometry("1700x500")
-root.option_add("*Font", "微軟正黑體 12")
+root.option_add("*Font", "新細明體 12")
 
 # 顯示CSV資料的函數
 def show_data():
