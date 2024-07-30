@@ -13,7 +13,7 @@ app.register_blueprint(auth_blueprint)
 application = DispatcherMiddleware(app,{
     "/dashboard/app1":app1.server,
     "/dashboard/app2":app2.server
-})
+}) # type: ignore
 
 @app.route("/")
 def index():
@@ -35,7 +35,7 @@ def index1():
     
 @app.errorhandler(404)
 def page_not_found(error):
-    return "<h2>沒有此頁面</h2>", 404
+    return render_template('error.html.jinja'), 404
 
 if __name__ == "__main__":
     run_simple("localhost", 8080, application,use_debugger=True,use_reloader=True)
