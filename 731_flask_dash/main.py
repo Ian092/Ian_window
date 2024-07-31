@@ -15,7 +15,7 @@ app.register_blueprint(auth_blueprint)
 application = DispatcherMiddleware(app,{
     "/dashboard/app1":app1.server,
     "/dashboard/app2":app2.server
-})
+}) # type: ignore
 
 @app.route("/")
 def index():
