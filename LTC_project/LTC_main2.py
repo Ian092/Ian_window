@@ -79,11 +79,11 @@ def show_bar_line_chart():
     ax1.tick_params(axis='y', labelcolor='tab:blue')
 
     ax2 = ax1.twinx()
-    ax2.set_ylabel('長照需求人數', color='tab:green', fontproperties=font_properties)
-    ax2.plot(regions, population_65_up, color='tab:green', marker='o', label='長照需求人數')
+    ax2.set_ylabel('長照需求數', color='tab:green', fontproperties=font_properties)
+    ax2.plot(regions, population_65_up, color='tab:green', marker='o', label='長照需求數')
     ax2.tick_params(axis='y', labelcolor='tab:green')
 
-    plt.title('地區的長照機構數和長照需求人數', fontproperties=font_properties)
+    plt.title('地區的長照機構數和長照需求數', fontproperties=font_properties)
     fig.tight_layout()
 
     canvas = FigureCanvasTkAgg(fig, master=window)
