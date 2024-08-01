@@ -96,7 +96,7 @@ def index(email:str | None = None):
             password = form.password.data
             print(f'email:{email}')
             print(f'password:{password}')
-            is_ok, username = validateUser(email,password)
+            is_ok, username = validateUser(email,password) # type: ignore
             if is_ok:
                 session['username'] = username
                 return redirect('/')

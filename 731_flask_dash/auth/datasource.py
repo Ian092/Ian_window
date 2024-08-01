@@ -8,7 +8,7 @@ load_dotenv()
 class InvalidEmailException(Exception):
     pass
 
-def insert_data(values:list[any]=None):
+def insert_data(values:list[any]=None): # type: ignore
     conn = psycopg2.connect(os.environ['POSTGRESQL_TOKEN'])
     with conn:
         with conn.cursor() as cursor:
